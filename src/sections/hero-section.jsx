@@ -26,7 +26,7 @@ export default function HeroSection() {
                 transition={{ delay: 0.2, type: "spring", stiffness: 320, damping: 70, mass: 1 }}
             >
                 <div className="size-2.5 bg-green-500 rounded-full animate-pulse"></div>
-                <span>Book a free consultation</span>
+                <span>Your first step toward a better space</span>
             </motion.a>
             <motion.h1 className="text-center text-5xl leading-[68px] md:text-6xl md:leading-[70px] mt-4 font-semibold max-w-3xl px-4"
                 initial={{ y: 50, opacity: 0 }}
@@ -50,13 +50,13 @@ export default function HeroSection() {
                 viewport={{ once: true }}
                 transition={{ type: "spring", stiffness: 320, damping: 70, mass: 1 }}
             >
-                <button className="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 transition text-white active:scale-95 rounded-lg px-7 h-11">
+                {/* <a href="#contact" className="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 transition text-white active:scale-95 rounded-lg px-7 h-11 inline-flex">
                     Get Started
                     <ArrowRight className="size-5" />
-                </button>
-                <button className="border border-slate-400 active:scale-95 hover:bg-white/10 transition rounded-lg px-8 h-11">
+                </a> */}
+                <a href="#contact" className="border border-slate-400 active:scale-95 hover:bg-white/10 transition rounded-lg px-8 h-11 inline-flex items-center justify-center">
                     Book a Consultation
-                </button>
+                </a>
             </motion.div>
             <TiltedImage />
         </section>

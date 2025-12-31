@@ -23,7 +23,7 @@ export default function Footer() {
                         />
                     </a>
                     <p className="text-sm/7 mt-6">
-                        Wingora Ventures is an AI & technology-driven business solutions company helping startups and growing brands operate smarter through automation, intelligent systems, and digital innovation.
+                        AI-driven business solutions for startups and growing brands.
                     </p>
                 </div>
 
@@ -38,16 +38,33 @@ export default function Footer() {
                     </div>
                 </div>
 
-                {/* Mission Section */}
+                {/* Contact Section */}
                 <div>
-                    <h2 className="font-semibold text-white mb-5">Our Mission</h2>
-                    <div className="text-sm space-y-3 max-w-sm">
-                        <p>
-                            We help businesses reduce manual work, enhance customer experience, and scale efficiently through practical and affordable AI-powered solutions.
-                        </p>
-                        <p>
-                            Our focus is on building strong digital foundations that keep businesses future-ready in a rapidly evolving world.
-                        </p>
+                    <h2 className="font-semibold text-white mb-5">Contact Us</h2>
+                    <div className="text-sm space-y-3">
+                        <div className="flex items-start space-x-3">
+                            <svg className="w-5 h-5 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <a href="mailto:Wingoraventures@gmail.com" className="hover:text-slate-300 transition break-all">
+                                Wingoraventures@gmail.com
+                            </a>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                            <svg className="w-5 h-5 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            <a href="tel:+916238912027" className="hover:text-slate-300 transition">
+                                +91 6238912027
+                            </a>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                            <svg className="w-5 h-5 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <span>Kerala, India</span>
+                        </div>
                     </div>
                 </div>
 

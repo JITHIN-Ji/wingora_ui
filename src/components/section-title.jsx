@@ -5,7 +5,7 @@ export default function SectionTitle({ title, description }) {
     const lastWord = words.pop();
     const firstPart = words.join(" ");
     return (
-        <div className="flex flex-col items-center mt-32">
+        <div className="flex flex-col items-center mt-20">
             <motion.h2 className="text-center text-4xl font-semibold max-w-2xl"
                 initial={{ y: 80, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
