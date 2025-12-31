@@ -1,5 +1,5 @@
 import GetInTouch from "./sections/get-in-touch";
-import OurTestimonials from "./sections/our-testimonials";
+// import OurTestimonials from "./sections/our-testimonials";
 import SubscribeNewsletter from "./sections/subscribe-newsletter";
 import TrustedCompanies from "./sections/trusted-companies";
 import Footer from "./components/footer";
@@ -18,7 +18,7 @@ export default function Page() {
                 <HeroSection />
                 <OurLatestCreation />
                 <AboutOurApps />
-                <OurTestimonials />
+                {/* <OurTestimonials /> */}
                 <TrustedCompanies />
                 <GetInTouch />
                 <SubscribeNewsletter />
