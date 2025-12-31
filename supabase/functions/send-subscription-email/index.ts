@@ -108,8 +108,8 @@ serve(async (req) => {
       );
     }
 
-    const responseData = await res.json();
-    console.log("Email sent successfully:", responseData);
+    // ✅ FIX: SendGrid returns 202 with empty body, so don't parse JSON
+    console.log("Email sent successfully! Status:", res.status);
 
     return new Response(
       JSON.stringify({ success: true, message: "Subscription successful" }),
