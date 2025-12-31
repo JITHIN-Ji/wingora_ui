@@ -72,27 +72,32 @@ export default function SubscribeNewsletter() {
       />
 
       <motion.div
-        className="flex items-center justify-center mt-10 border border-slate-700 rounded-full h-14 max-w-xl w-full"
-        initial={{ y: 150, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true }}
-      >
-        <input
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Enter your email address"
-          className="bg-transparent outline-none px-4 h-full flex-1"
-        />
+  className="mt-10 w-full max-w-xl"
+  initial={{ y: 150, opacity: 0 }}
+  whileInView={{ y: 0, opacity: 1 }}
+  viewport={{ once: true }}
+>
+  <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-0 border border-slate-700 rounded-2xl sm:rounded-full p-2">
+    
+    <input
+      type="email"
+      value={email}
+      onChange={(e) => setEmail(e.target.value)}
+      placeholder="Enter your email address"
+      className="bg-transparent outline-none px-4 h-12 w-full sm:flex-1 text-white"
+    />
 
-        <button
-          onClick={handleSubscribe}
-          disabled={loading}
-          className="bg-indigo-600 text-white rounded-full h-11 mr-1 px-10 disabled:opacity-60"
-        >
-          {loading ? "Subscribing..." : "Subscribe"}
-        </button>
-      </motion.div>
+    <button
+      onClick={handleSubscribe}
+      disabled={loading}
+      className="bg-indigo-600 text-white rounded-xl sm:rounded-full h-12 w-full sm:w-auto px-10 disabled:opacity-60"
+    >
+      {loading ? "Subscribing..." : "Subscribe"}
+    </button>
+
+  </div>
+</motion.div>
+
 
       {message && <p className="mt-4 text-sm text-slate-400">{message}</p>}
     </section>
